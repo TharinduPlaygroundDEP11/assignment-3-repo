@@ -75,34 +75,42 @@ public class Demo {
 
         String subject1Status;
         if (marks1 >= 75){
-            subject1Status = "\033[1m\033[32mCredit Pass\033[0m";
+            subject1Status = "\033[1m\033[34mDestinguished Pass(DP)\033[0m";
+        }else if (marks1 >= 65){
+            subject1Status = "\033[1m\033[32mCredit Pass(CP)\033[0m";
         }else if (marks1 >= 55){
-            subject1Status = "\033[1m\033[34mPass\033[0m";
-        }else subject1Status = "\033[1m\033[31mFail\033[0m";
+            subject1Status = "\033[1m\033[33mPass(P)\033[0m";
+        }else subject1Status = "\033[1m\033[31mFail(F)\033[0m"; 
 
         String subject2Status;
         if (marks2 >= 75){
-            subject2Status = "\033[1m\033[32mCredit Pass\033[0m";
+            subject2Status = "\033[1m\033[34mDestinguished Pass(DP)\033[0m";
+        }else if (marks2 >= 65){
+            subject2Status = "\033[1m\033[32mCredit Pass(CP)\033[0m";
         }else if (marks2 >= 55){
-            subject2Status = "\033[1m\033[34mPass\033[0m";
-        }else subject2Status = "\033[1m\033[31mFail\033[0m";
+            subject2Status = "\033[1m\033[33mPass(P)\033[0m";
+        }else subject2Status = "\033[1m\033[31mFail(F)\033[0m"; 
 
         String subject3Status;
         if (marks3 >= 75){
-            subject3Status = "\033[1m\033[32mCredit Pass\033[0m";
+            subject3Status = "\033[1m\033[34mDestinguished Pass(DP)\033[0m";
+        }else if (marks3 >= 65){
+            subject3Status = "\033[1m\033[32mCredit Pass(CP)\033[0m";
         }else if (marks3 >= 55){
-            subject3Status = "\033[1m\033[34mPass\033[0m";
-        }else subject3Status = "\033[1m\033[31mFail\033[0m";        
+            subject3Status = "\033[1m\033[33mPass(P)\033[0m";
+        }else subject3Status = "\033[1m\033[31mFail(F)\033[0m";       
 
 
         Double totalMarks = marks1 + marks2 + marks3;
         double avgMarks = totalMarks / 3;
         String finalStatus;
         if (avgMarks >= 75){
-            finalStatus = "\033[1m\033[32mCredit Pass\033[0m";
+            finalStatus = "\033[1m\033[34mDestinguished Pass(DP)\033[0m";
+        }else if (avgMarks >= 65){
+            finalStatus = "\033[1m\033[32mCredit Pass(CP)\033[0m";
         }else if (avgMarks >= 55){
-            finalStatus = "\033[1m\033[34mPass\033[0m";
-        }else finalStatus = "\033[1m\033[31mFail\033[0m";
+            finalStatus = "\033[1m\033[33mPass(P)\033[0m";
+        }else finalStatus = "\033[1m\033[31mFail(F)\033[0m";
 
 
         System.out.println("+" + "-".repeat(50) + "+");
