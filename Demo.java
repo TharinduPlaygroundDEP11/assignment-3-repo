@@ -113,18 +113,18 @@ public class Demo {
         }else finalStatus = "\033[1m\033[31mFail(F)\033[0m";
 
 
-        System.out.println("+" + "-".repeat(50) + "+");
-        System.out.printf("| \033[1mName : \033[34m%-42s\033[0m|\n", name.toUpperCase());
-        System.out.printf("| \033[1mAge : \033[31m%-3s\033[0m%-40s|\n", age, "years old");
-        System.out.printf("| \033[1mStatus : \033[31m%-53s\033[0m|\n", finalStatus);
-        System.out.printf("| \033[1mTotal :\033[0m %-15.2f \033[1mAverage :\033[0m %-6.2f%-9s\033[0m|\n", totalMarks, avgMarks, "%");
-        System.out.printf("+" + "-".repeat(10) + "+" + "-".repeat(17) + "+" + "-".repeat(21) + "+\n");
-        System.out.printf("| %-9s| %-16s| %-20s|\n", "Subject", "Marks", "Status");
-        System.out.printf("+" + "-".repeat(10) + "+" + "-".repeat(17) + "+" + "-".repeat(21) + "+\n");
-        System.out.printf("| SE- %03d  | %-16.2f| %-33s|\n", Integer.parseInt(subject1.substring(3)), marks1, subject1Status);
-        System.out.printf("| SE- %03d  | %-16.2f| %-33s|\n", Integer.parseInt(subject2.substring(3)), marks2, subject2Status);
-        System.out.printf("| SE- %03d  | %-16.2f| %-33s|\n", Integer.parseInt(subject3.substring(3)), marks3, subject3Status);
-        System.out.printf("+" + "-".repeat(10) + "+" + "-".repeat(17) + "+" + "-".repeat(21) + "+\n");
+        System.out.println("+" + "-".repeat(52) + "+");
+        System.out.printf("| \033[1mName : \033[34m%-44s\033[0m|\n", name.toUpperCase());
+        System.out.printf("| \033[1mAge : \033[31m%-3s\033[0m%-42s|\n", age, "years old");
+        System.out.printf("| \033[1mStatus : \033[31m%-55s\033[0m|\n", finalStatus);
+        System.out.printf("| \033[1mTotal :\033[0m %-15.2f \033[1mAverage :\033[0m %-6.2f%-11s\033[0m|\n", totalMarks, avgMarks, "%");
+        System.out.printf("+" + "-".repeat(10) + "+" + "-".repeat(17) + "+" + "-".repeat(23) + "+\n");
+        System.out.printf("| %-9s| %-16s| %-22s|\n", "Subject", "Marks", "Status");
+        System.out.printf("+" + "-".repeat(10) + "+" + "-".repeat(17) + "+" + "-".repeat(23) + "+\n");
+        System.out.printf("| SE- %03d  | %-16.2f| %-35s|\n", Integer.parseInt(subject1.substring(3)), marks1, subject1Status);
+        System.out.printf("| SE- %03d  | %-16.2f| %-35s|\n", Integer.parseInt(subject2.substring(3)), marks2, subject2Status);
+        System.out.printf("| SE- %03d  | %-16.2f| %-35s|\n", Integer.parseInt(subject3.substring(3)), marks3, subject3Status);
+        System.out.printf("+" + "-".repeat(10) + "+" + "-".repeat(17) + "+" + "-".repeat(23) + "+\n");
 
     }
 }
